@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_g.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="icon" href="img/icons/icon.png">
+    <title>Galerie</title>
+</head>
+<body>
+  <header class="header">
+    <h1 id="title">
+        <span>Y</span>
+        <span id="K">K</span> 
+        ATIS
+    </h1>
+
+    <nav class="nav-bar">
+        <ul>  
+          <li><a href="index.html">Acasă</a> </li>
+        <li ><a href="#">Activități</a>
+         <ul class="dropdown">
+            <li><a href="galery.html">Galerie</a></li>
+            <li><a href="#">Informații</a></li>
+         </ul>
+        </li>
+           <li><a href="#">Date de contact</a> </li>
+         </ul>
+    </nav>
+
+    <div class="off-screen-menu">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="galery.html">Galerie</a></li>
+        <li><a href="Info.html">Informații</a></li>
+        <li><a href="Contact.html">Date de contact</a></li>
+      </ul>
+    </div>
+
+      <div class="ham-menu">
+        <span></span>
+        <span></span>
+        <span></span> 
+      </div>
+      
+    <script>
+        const hamMenu = document.querySelector(".ham-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+
+            hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+            });
+      </script>
+</header>
+  
+<div class="cont">
+  <div class="heading">
+    <h3>Galeria <span>Noastră</span></h3>
+  </div>
+  <div class="bocs">
+    <div class="ph">
+      <img src="img/Gallery/1.JPG">
+      <img src="img/Gallery/2.JPG">
+      <img src="img/Gallery/3.JPG">
+      <img src="img/Gallery/4.JPG">
+      <img src="img/Gallery/5.JPG">
+    </div>
+
+      <div class="ph">
+      <img src="img/Gallery/6.JPG">
+      <img src="img/Gallery/7.JPG">
+      <img src="img/Gallery/8.JPG">
+      <img src="img/Gallery/9.JPG">
+      <img src="img/Gallery/10.JPG">
+    </div>
+
+    <div class="ph">
+      <img src="img/Gallery/11.JPG">
+      <img src="img/Gallery/12.JPG">
+      <img src="img/Gallery/13.JPG">
+      <img src="img/Gallery/14.JPG">
+      <img src="img/Gallery/15.JPG">
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div >
+  <div class="row">
+  <a href="https://www.instagram.com/yk.atis/" target="_blank"><img src="img/icons/instagram.png" alt="insta"></a>
+  <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a>
+  <a href="https://www.tiktok.com/@yk.atis" target="_blank"><img src="img/icons/tiktok.png" alt="tiktok"></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="#">Galerieia evenimentelor</a></li>
+  <li><a href="#">Informații despre noi</a></li>
+  <li><a href="#">Date de contact</a></li>
+  <li><a href="#">Scrie problema ta</a></li>
+  <li><a href="#">Despre voluntariat</a></li>
+  </ul>
+  </div>
+  
+  <div class="row" style="font-size: 0.8em;">
+    Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
+    organizată de proiectul ”Tekwill în Fiecare Școală”.
+  </div>
+
+  </div>
+  </footer>
+</body>
+</html>

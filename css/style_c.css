@@ -1,0 +1,33 @@
+.cutie{
+    margin-top: 150px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social{
+    width: 10%;
+    opacity: 0.9;
+    transition: 0.5s ease;
+    left:-5%
+}
+
+iframe{
+    
+    left: 10%;
+}
+
+img{
+    width: 18%;
+}
+
+.social:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    left: 10px;
+}

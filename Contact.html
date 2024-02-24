@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_c.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="icon" href="img/icons/icon.png">
+    <title>Date de contact</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">
+            <span>Y</span>
+            <span id="K">K</span> 
+            ATIS
+        </h1>
+
+        <nav class="nav-bar">
+            <ul>  
+            <li ><a href="#">Activități</a>
+             <ul class="dropdown">
+                <li><a href="galery.html">Galerie</a></li>
+                <li><a href="#">Informații</a></li>
+             </ul>
+            </li>
+               <li><a href="index.html">Acasă</a> </li>
+               <li><a href="#">Date de contact</a> </li>
+             </ul>
+        </nav>
+
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="index.html">Acasă</a></li>
+            <li><a href="galery.html">Galerie</a></li>
+            <li><a href="Info.html">Informații</a></li>
+            <li><a href="Contact.html">Date de contact</a></li>
+          </ul>
+        </div>
+    
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span> 
+          </div>
+          
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+            const offScreenMenu = document.querySelector(".off-screen-menu");
+
+                hamMenu.addEventListener("click", () => {
+                hamMenu.classList.toggle("active");
+                offScreenMenu.classList.toggle("active");
+                });
+          </script>
+    </header>
+       <div class="co">
+        <div class="cutie">
+            <h1>Pentru a afla mai mult:</h1>
+            <div class="slot">
+              <img src="img/icons/phone-call.png">
+               <h2> 0231-4-64-62 </h2>
+            </div>
+
+            <div class="slot">
+              <img src="img/icons/email.png">
+               <h2> cspt.atis@mail.com </h2>
+            </div>
+
+            <div class="slot">
+              <a href="https://www.facebook.com/ykAtis.Balti/"><img class="social" src="img/icons/facebook.png"> </a>
+              <a href="https://www.tiktok.com/@yk.atis"><img class="social" src="img/icons/tiktok.png"> </a>
+              <a href="https://www.instagram.com/yk.atis/"><img class="social" src="img/icons/instagram.png"> </a>
+            </div>
+        </div>
+
+<div class="loc">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.9574203987486!2d27.92307797700693!3d47.78227367120656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb61161056a923%3A0x748b256919543dd3!2sYouth%20Klinic%20ATIS!5e0!3m2!1sru!2s!4v1708796582301!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+       </div>
+
+    <footer class="footer">
+        <div >
+        <div class="row">
+        <a href="https://www.instagram.com/yk.atis/" target="_blank"><img src="img/icons/instagram.png" alt="insta"></a>
+        <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a>
+        <a href="https://www.tiktok.com/@yk.atis" target="_blank"><img src="img/icons/tiktok.png" alt="tiktok"></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Galerieia evenimentelor</a></li>
+        <li><a href="#">Informații despre noi</a></li>
+        <li><a href="#">Date de contact</a></li>
+        <li><a href="#">Scrie problema ta</a></li>
+        <li><a href="#">Despre voluntariat</a></li>
+        </ul>
+        </div>
+        
+        <div class="row" style="font-size: 0.8em;">
+          Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
+          organizată de proiectul ”Tekwill în Fiecare Școală”.
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
