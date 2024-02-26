@@ -399,7 +399,7 @@ button #send-button:hover {
   background-color: #654389;
 }
 
-#pr {
+#pro {
   font-family: 'Lato', 'Helvetica';
 }
 
@@ -693,8 +693,34 @@ button {
 
   #title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 36px; /* Reducem mărimea fontului pentru a se potrivi mai bine pe dispozitive mobile */
-    color: #4CAF50; /* Schimbăm culoarea titlului */
+    font-size: 36px;
+    color: #4CAF50;
     margin-left: 20px;
+  }
+
+  #problema{
+    font-size: 2em;
+  }
+
+  #pro{
+    display: block;
+  }
+
+  .problem{
+    width: 100%;
+    margin-top: -70px;
+  }
+
+  .scrie-problema{
+    margin-top: 60px;
+    width: 80%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: -4%;
+  }
+
+  #pr{
+    width: 100%;
   }
 }
