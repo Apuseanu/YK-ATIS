@@ -1,0 +1,48 @@
+.footer {
+    background: #fff;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .footer .row {
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: #45a049;
+    font-size: 1.2em;
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: #4aa85e;
+    transition: 0.5s;
+  }
+  
+  .footer .row a:hover {
+    color: #754f9e;
+  }
+  
+  .footer .row ul {
+    width: 100%;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+  
+  .footer .row a img {
+    margin: 0% 1%;
+    width: 4%;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  
+  .footer .row a:hover img{
+    border-radius: 50%;
+    box-shadow: 1px 6px #262626;
+    opacity: 1;
+  }

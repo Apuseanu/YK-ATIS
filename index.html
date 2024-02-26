@@ -13,11 +13,13 @@
 </head>
 <body>
     <header class="header">
+      <a style="text-decoration: none;" href="index.html">
         <h1 id="title">
             <span>Y</span>
             <span id="K">K</span> 
             ATIS
         </h1>
+      </a>
 
         <nav class="nav-bar">
             <ul>  
@@ -27,7 +29,9 @@
                 <li><a href="#">Informații</a></li>
              </ul>
             </li>
-               <li><a href="index.html">Acasă</a> </li>
+            <li><a href="index.html">FAQ</a> </li>
+            <li><a href="index.html">Specialisti YK</a> </li>
+                <li><a href="">Voluntari</a></li>
                <li><a href="Contact.html">Date de contact</a> </li>
              </ul>
         </nav>
@@ -108,6 +112,7 @@
         </section>
     </div>
        
+    <a name="Prob"></a>
     <div class="misiune">
       <h1>
           7 probleme principale cu care se 
@@ -149,6 +154,7 @@
       </ul>
     </section>
     <section class="scrie-problema">
+      
       <h2 id="pr">Scrie problema ta</h2>
       <div class="form">
         <form method="GET" action="mailto:voluntari5atis@gmail.com">
@@ -242,6 +248,98 @@
       Verificăte dacă ești în risc!!
     </p>
     <button class="alt" style="background-color: #45a049">Test</button>
+        <!-- Modalul pentru testul HIV -->
+<div id="testModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Test HIV</h2>
+    <p>Răspundeți la întrebări pentru a primi rezultatul.</p>
+    
+    <!-- Întrebările și opțiunile -->
+    <div class="question">
+      <p>1. Ai auzit despre HIV sau SIDA?</p>
+      <div class="options">
+        <div class="option" data-color="yellow">Nu</div>
+        <div class="option" data-color="green">Da</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>2. Cât de des utilizezi în comun cu alte persoane peria de dinți, foarfeca de manichiură sau lamele de bărberit?</p>
+      <div class="options">
+        <div class="option" data-color="red">Permanent</div>
+        <div class="option" data-color="yellow">Uneori</div>
+        <div class="option" data-color="green">Niciodată</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>3. Cât de des ai făcut tatuaj, piersing în saloane neautorizate sau în condiții nesigure?</p>
+      <div class="options">
+        <div class="option" data-color="red">Permanent</div>
+        <div class="option" data-color="yellow">Uneori</div>
+        <div class="option" data-color="green">Niciodată</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>4. Ai întreținut relații sexuale?</p>
+      <div class="options">
+        <div class="option" data-color="red">Da</div>
+        <div class="option" data-color="green">Nu</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>5. Cât de des utilizezi prezervativul în timpul relațiilor sexuale?</p>
+      <div class="options">
+        <div class="option" data-color="red">Niciodată</div>
+        <div class="option" data-color="yellow">Uneori</div>
+        <div class="option" data-color="green">Permanent</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>6. Cât de des întreții relații sexuale sub influența alcoolului?</p>
+      <div class="options">
+        <div class="option" data-color="red">Permanent</div>
+        <div class="option" data-color="yellow">Uneori</div>
+        <div class="option" data-color="green">Niciodată</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>7. Ai consumat vreodată droguri?</p>
+      <div class="options">
+        <div class="option" data-color="yellow">Da</div>
+        <div class="option" data-color="green">Nu</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>8. Ai consumat vreodată droguri injectabile?</p>
+      <div class="options">
+        <div class="option" data-color="red">Da</div>
+        <div class="option" data-color="green">Nu</div>
+      </div>
+    </div>
+
+    <div class="question">
+      <p>9. Ai folosit vreodată ace, seringi sau alt echipament în comun cu alții atunci când consumi droguri injectabile?</p>
+      <div class="options">
+        <div class="option" data-color="red">Da</div>
+        <div class="option" data-color="green">Nu</div>
+      </div>
+    </div>
+    
+    <!-- Butonul pentru trimiterea răspunsurilor -->
+    <button id="submitAnswers">Trimite răspunsurile</button>
+    
+    <!-- Mesajul de rezultat -->
+    <div id="resultMessage" style="display: none; margin-top: 20px;"></div>
+  </div>
+</div>
+<script src="js/HIV.js"></script>
   </div>
 
   <div class="box">
@@ -280,7 +378,7 @@
   <li><a href="#">Galerieia evenimentelor</a></li>
   <li><a href="#">Informații despre noi</a></li>
   <li><a href="#">Date de contact</a></li>
-  <li><a href="#">Scrie problema ta</a></li>
+  <li><a href="#Prob">Scrie problema ta</a></li>
   <li><a href="#">Despre voluntariat</a></li>
   </ul>
   </div>
