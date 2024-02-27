@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="icon" href="img/icons/icon.png">
     <title>Informații</title>
 </head>
 <body>
-    
+    <header class="header">
+        <a style="text-decoration: none;" href="index.html">
+          <h1 id="title">
+              <span>Y</span>
+              <span id="K">K</span> 
+              ATIS
+          </h1>
+        </a>
+  
+          <nav class="nav-bar">
+              <ul>  
+              <li ><a href="#">Activități</a>
+               <ul class="dropdown">
+                  <li><a href="galery.html">Galerie</a></li>
+                  <li><a href="info.html">Informații</a></li>
+               </ul>
+              </li>
+              <li><a href="index.html">FAQ</a> </li>
+              <li><a href="index.html">Specialisti YK</a> </li>
+                  <li><a href="">Voluntari</a></li>
+                 <li><a href="Contact.html">Date de contact</a> </li>
+               </ul>
+          </nav>
+  
+          <div class="off-screen-menu">
+            <ul>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="galery.html">Galerie</a></li>
+              <li><a href="Info.html">Informații</a></li>
+              <li><a href="Info.html">Specialisti</a></li>
+              <li><a href="Info.html">Voluntari</a></li>
+              <li><a href="Contact.html">Date de contact</a></li>
+            </ul>
+          </div>
+      
+            <div class="ham-menu">
+              <span></span>
+              <span></span>
+              <span></span> 
+            </div>
+            
+          <script>
+              const hamMenu = document.querySelector(".ham-menu");
+              const offScreenMenu = document.querySelector(".off-screen-menu");
+  
+                  hamMenu.addEventListener("click", () => {
+                  hamMenu.classList.toggle("active");
+                  offScreenMenu.classList.toggle("active");
+                  });
+            </script>
+      </header>
 </body>
 </html>
