@@ -723,4 +723,39 @@ button {
   #pr{
     width: 100%;
   }
+
+  #list {
+     margin-left: 35%;
+  }
+  
+  .conteiner {
+    width: 800px;
+    font-size: 15px;
+    display: flex;
+    font-family: 'Lato';
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+  }
+  
+  .conteiner .box {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    background: #654389;
+    padding: 90px 30px 50px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
+  }
+  
+}
+
+@media (hover: hover) {
+  
+}
+
+@media (hover: none) {    /*Pentru telefoane*/
+  .problem #pro li:active{
+    background-color: #654389;
+    transform: scale(0.5);
+  }
 }
