@@ -101,3 +101,9 @@ header{
 .nav-bar li:hover .dropdown {
   display: block;
 }
+
+@media (max-width: 768px){
+  nav{
+    display: none;
+  }
+}

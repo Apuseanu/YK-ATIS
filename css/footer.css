@@ -51,6 +51,7 @@
     
     .footer{
       height: 200px;
+      width: 100%;
     }
     
     .footer .row a img {
