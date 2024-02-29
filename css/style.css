@@ -287,6 +287,10 @@ transform: scale(1.2);
 
 @media (max-width:768px) {
   
+    .conteiner{
+      overflow: hidden;
+    }
+
   .misiune{
     padding: 0px 20px;
   }
@@ -581,7 +585,8 @@ button {
 
 @media (max-width: 768px) {
   .conteiner .box {
-    flex-basis: calc(50% - 20px);
+    flex-basis: calc(70% - 25px);
+    margin-right: 10%;
   }
 }
 
@@ -729,23 +734,33 @@ button {
   }
   
   .conteiner {
-    width: 800px;
+    width: 380px;
     font-size: 15px;
     display: flex;
     font-family: 'Lato';
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-left:-90px;
     color: #fff;
-  }
-  
-  .conteiner .box {
+}
+
+.conteiner .box {
     position: relative;
     width: 320px;
     height: 280px;
     background: #654389;
     padding: 90px 30px 50px;
     box-shadow: 0 15px 45px rgba(0, 0, 0, .1);
-  }
+    margin-bottom: 20px;
+}
+
+.trip .misiune h1{
+  margin-right: 130px;
+}
+
+video {
+  display: flex;
+  margin-right:  130px;
+}
   
 }
 

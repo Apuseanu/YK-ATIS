@@ -46,3 +46,33 @@
     box-shadow: 1px 6px #262626;
     opacity: 1;
   }
+
+  @media (max-width:768px){
+    
+    .footer{
+      height: 200px;
+    }
+    
+    .footer .row a img {
+      margin: 0% 1%;
+      width: 13%;
+      border-radius: 50%;
+      opacity: 0.8;
+      transition: 0.5s;
+    }
+
+    .footer .row ul li a{
+      display: inline;
+      width: 100%;
+      font-size: 0.8em;
+    }
+
+    .footer .row ul{
+      margin-top: -70px;
+      word-spacing: 5px;
+    }  
+
+    .footer .row p {
+      margin-top: 80px;
+    }
+  }
