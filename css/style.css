@@ -673,7 +673,7 @@ button {
 }
 
  .misiune{
-  width: 400px;
+  width: 350px;
 }
 
  .misiune h1{
@@ -721,26 +721,26 @@ button {
 
 /*-------*/
 
-.footer .ow {
+.footer .row {
   margin: 1% 10%;
   padding: 1% 1%;
   color: #45a049;
   font-size: 1em;
 }
 
-.footer .ow a {
+.footer .row a {
   text-decoration: none;
   color: #4aa85e;
   transition: 0.5s;
 }
 
-.footer .ow ul {
+.footer .row ul {
   display: block;
-  width: 70%;
+  width: 75%;
   top: 5px;
 }
 
-.footer .ow ul li {
+.footer .row ul li {
   display: inline-block;
   margin: 0px 30px;
   margin-bottom: 5px;
