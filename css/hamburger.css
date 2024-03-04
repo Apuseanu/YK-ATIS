@@ -80,7 +80,7 @@
         background-color: #6F86FF;
         border-radius: 25px;
         position: absolute;
-        left: 10%;
+        left: -40%;
         top: 50%;
         transform: translate(-50%, -50%);
         transition: .3s ease;

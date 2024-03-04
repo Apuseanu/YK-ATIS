@@ -26,42 +26,46 @@
         </h1>
 
         <nav class="nav-bar">
-            <ul>  
-            <li ><a href="#">Activități</a>
-             <ul class="dropdown">
-                <li><a href="galery.html">Galerie</a></li>
-                <li><a href="#">Informații</a></li>
-             </ul>
-            </li>
-               <li><a href="index.html">Acasă</a> </li>
-               <li><a href="#">Date de contact</a> </li>
-             </ul>
-        </nav>
-
-        <div class="off-screen-menu">
           <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="galery.html">Galerie</a></li>
-            <li><a href="Info.html">Informații</a></li>
-            <li><a href="Contact.html">Date de contact</a></li>
+              <li><a href="#">Activități</a>
+                  <ul class="dropdown">
+                      <li><a href="galery.html">Galerie</a></li>
+                      <li><a href="Info.html">Informații</a></li>
+                  </ul>
+              </li>
+              <li><a href="index.html">FAQ</a></li>
+              <li><a href="index.html">Specialisti YK</a></li>
+              <li><a href="">Voluntari</a></li>
+              <li><a href="Contact.html">Date de contact</a></li>
           </ul>
-        </div>
-    
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span> 
-          </div>
-          
-        <script>
-            const hamMenu = document.querySelector(".ham-menu");
-            const offScreenMenu = document.querySelector(".off-screen-menu");
+      </nav>
 
-                hamMenu.addEventListener("click", () => {
-                hamMenu.classList.toggle("active");
-                offScreenMenu.classList.toggle("active");
-                });
-          </script>
+      <div class="off-screen-menu">
+          <ul>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="galery.html">Galerie</a></li>
+              <li><a href="Info.html">Informații</a></li>
+              <li><a href="Info.html">Specialisti</a></li>
+              <li><a href="Info.html">Voluntari</a></li>
+              <li><a href="Contact.html">Date de contact</a></li>
+          </ul>
+      </div>
+
+      <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <script>
+          const hamMenu = document.querySelector(".ham-menu");
+          const offScreenMenu = document.querySelector(".off-screen-menu");
+
+          hamMenu.addEventListener("click", () => {
+              hamMenu.classList.toggle("active");
+              offScreenMenu.classList.toggle("active");
+          });
+      </script>
     </header>
       
     <div class="container">
@@ -159,11 +163,11 @@
         
         <div class="row">
         <ul>
-        <li><a href="#">Galerieia evenimentelor</a></li>
+        <li><a href="galery.html">Galerieia evenimentelor</a></li>
         <li><a href="#">Informații despre noi</a></li>
-        <li><a href="#">Date de contact</a></li>
-        <li><a href="#">Scrie problema ta</a></li>
-        <li><a href="#">Despre voluntariat</a></li>
+        <li><a href="Contact.html">Date de contact</a></li>
+        <li><a href="index.html #Prob">Scrie problema ta</a></li>
+        <li><a href="Voluntariat.html">Despre voluntariat</a></li>
         </ul>
         </div>
         
