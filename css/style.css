@@ -759,4 +759,8 @@ button {
 iframe{
   width: 100%;
 }
+
+.image-caption p{
+  font-size: 3em;
+}
 }
