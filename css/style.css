@@ -538,6 +538,15 @@ button {
   
 }
 
+.trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-bottom: 20px;
+}
+
 /*Footer*/
 .footer {
   background: #fff;
@@ -746,4 +755,8 @@ button {
   margin-bottom: 5px;
 }
 
+
+iframe{
+  width: 100%;
+}
 }
