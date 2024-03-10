@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+.up_part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 122px;
+    height: 830px;
+    background: #dbb9ffc2;
+    box-shadow: 2px 8px 20px #76638894;
+}
+
+.up_part h1 {
+    flex: 1; 
+    margin-right: 20px;
+    margin-left: 40px;
+    font-size: 3.9em; 
+    font-family: 'Lato', 'Arial';
+    font-weight: bold;
+    color: #4aa85e;
+    text-shadow: 2px 2px #222;
+}
+
+#Voluntari {
+    max-width: 100%;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: 65px;
+    border-radius: 40%;
+}
+
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.more {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    height: 830px;
+    line-height: 1.5;
+    box-shadow: 2px 11px 20px #76638894;
+    color: #55bd6c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    width: 40%;
+}
+
+.more ul {
+    padding-left: 40px;
+    width: 57%;
+}
+
+.more li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+}
+
+.more p {
+    margin: 0;
+    line-height: 1.5;
+   text-shadow:2px 2px 4px rgba(170, 170, 170, 0.5);
+}
+
+.more p:first-child::first-letter {
+    font-size: 48px;
+    float: left;
+    margin-right: 10px;
+    line-height: 0.8;
+    color: #409c53;
+    font-weight: bold;
+}
+
+.more img {
+    width: 30%;
+    height: 500px;
+    margin-right: 180px;
+}
+
+.mot {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #409c53;
+    padding: 40px;
+    background: #caa8eec2;
+    box-shadow: 2px 5px 2px #76638894;
+    margin-top: -20px;
+    height: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mot h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 110px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(173, 172, 172, 0.3);
+    width: 50%;
+    color: #54c069;
+}
+
+.mot p {
+    padding-left: 110px;
+    margin: 0;
+    line-height: 1.5;
+    width: 50%;
+    color: #48aa5c;
+}
+
+.mot ul {
+    padding-left: 140px;
+    list-style-type: disc;
+    width: 60%;
+}
+
+.mot li {
+    margin-bottom: 10px;
+}
+
+.mot img {
+    width: 35%;
+    height: 90%;
+    margin-top: 10px;
+    margin-right: 65px;
+    border-radius: 40%;
+}
+
+
