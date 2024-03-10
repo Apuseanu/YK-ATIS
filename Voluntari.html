@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hamburger.css">
+    <link rel="stylesheet" href="css/style_v.css">
+    <link rel="icon" href="img/icons/icon.png">
+    <title>Voluntari</title>
+</head>
+<body>
+    <header class="header">
+        <a style="text-decoration: none;" href="index.html">
+            <h1 id="title">
+                <span>Y</span>
+                <span id="K">K</span>
+                ATIS
+            </h1>
+        </a>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Activități</a>
+                    <ul class="dropdown">
+                        <li><a href="galery.html">Galerie</a></li>
+                        <li><a href="Info.html">Informații</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">FAQ</a></li>
+                <li><a href="index.html">Specialisti YK</a></li>
+                <li><a href="">Voluntari</a></li>
+                <li><a href="Contact.html">Date de contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="galery.html">Galerie</a></li>
+                <li><a href="Info.html">Informații</a></li>
+                <li><a href="Info.html">Specialisti</a></li>
+                <li><a href="Info.html">Voluntari</a></li>
+                <li><a href="Contact.html">Date de contact</a></li>
+            </ul>
+        </div>
+
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <script>
+            const hamMenu = document.querySelector(".ham-menu");
+            const offScreenMenu = document.querySelector(".off-screen-menu");
+
+            hamMenu.addEventListener("click", () => {
+                hamMenu.classList.toggle("active");
+                offScreenMenu.classList.toggle("active");
+            });
+        </script>
+    </header>
+
+    <div class="up_part">
+    <h1>Află mai mult despre voluntariat</h1>
+    <img src="img/voluntari.JPG" id="Voluntari" alt="Voluntari">
+    </div>
+
+<div class="more">
+    <div style="width: 60%;">
+    <h2>CE ÎNSEAMNĂ VOLUNTARIATUL?</h2>
+    <ul>
+    <li>
+        <p>
+            Voluntariatul este ac vitatea desfăşurată din proprie iniţia vă, 
+            de orice persoana fizică, în folosul altora, fără a primi o 
+            contraprestație materială.
+        </p>
+    </li>
+    <li>
+        <p>
+            Munca de voluntariat înseamnă dorința de a ajuta, de a face 
+            ceva pentru societate, de a sprijini comunitatea în problemele 
+            cu care se confruntă.
+        </p>
+    </li>
+    <li>
+        <p>
+            Orice muncă prestată fără constrângere de o persoana cu 
+            intenţia de a ajuta şi fără a urmări un câş g financiar imediat.
+        </p>
+    </li>
+    </ul>
+    </div>
+    <img src="img/icons/question.png">
+</div>
+
+<div class="mot">
+    <div>
+    <h2>
+        CE MOTIVEAZĂ TINERII 
+SĂ FACĂ VOLUNTARIAT?
+    </h2>
+    <p>
+    În topul celor mai frecvente mo ve din 
+care nerii aleg să facă voluntariat la YK se 
+regăsesc următoarele:
+    </p>
+    <ul> 
+<li>- au posibilitatea să-și facă prieteni noi;</li>
+<li>- se implică în diverse ac vități;</li>
+<li>- pot dobândi noi abilități și ap tudini;</li>
+<li>- își dezvoltă încrederea în sine; </li>
+<li>- se pregătesc pentru o viitoare profesie;</li>
+<li>- își doresc să schimbe ceva în comunitate, etc.</li>
+    </ul>
+</div>
+<img src="img/Sticker/Stick_qustion.png">
+</div>
+
+<div class="part">
+    <div class="card">
+        <img src="">
+        <div class="content">
+            <h3></h3>
+            <p>
+
+            </p>
+            <a href="" class="mai">Află mai mult</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="">
+        <div class="content">
+            <h3></h3>
+            <p>
+
+            </p>
+            <a href="" class="mai">Află mai mult</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="">
+        <div class="content">
+            <h3></h3>
+            <p>
+
+            </p>
+            <a href="" class="mai">Află mai mult</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

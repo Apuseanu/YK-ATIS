@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+body{
+    background-color: #F0F6F2;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+header{
+    background-color: #fff;
+    width: 100%;
+    height: 120px;
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#title {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+  color: #4aa85e;
+  margin-left: 20px;
+  word-spacing: 8px;
+}
+
+#title span {
+  display: inline-block;
+}
+
+#title #K {
+  color: #654389;
+  margin-left: -14px;
+}
+
+.nav-bar {
+  text-align: center;
+}
+
+.nav-bar ul {
+  padding: 0;
+  list-style: none;
+  margin-top: 0;
+}
+
+.nav-bar li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-bar a {
+  display: block;
+  padding: 10px 20px;
+  color: #654389;
+  font-family: 'Lato', Helvetica, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-bar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #6f4a97d3;
+  transition: .5s;
+}
+
+.nav-bar a:hover::before {
+  width: 100%;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  text-align: left;
+  background-color: #fafafaf1;
+  z-index: 999; 
+  width: 100%;
+}
+
+.dropdown li {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px 20px;
+  color: #654389;
+}
+
+.dropdown li:hover {
+  background-color: #fafafa;
+}
+
+.nav-bar li:hover .dropdown {
+  display: block;
+}
+
+@media (max-width: 768px){
+  nav{
+    display: none;
+  }
+}

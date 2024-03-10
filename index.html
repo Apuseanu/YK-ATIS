@@ -1,295 +1,261 @@
 <!DOCTYPE html>
 <html lang="ro">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="icon" href="img/icons/icon.png">
     <title>YK ATIS</title>
 </head>
+
 <body>
     <header class="header">
-        <h1 id="title">
-            <span>Y</span>
-            <span id="K">K</span> 
-            ATIS
-        </h1>
+        <a style="text-decoration: none;" href="index.html">
+            <h1 id="title">
+                <span>Y</span>
+                <span id="K">K</span>
+                ATIS
+            </h1>
+        </a>
 
         <nav class="nav-bar">
-            <ul>  
-            <li ><a href="#">Activități</a>
-             <ul class="dropdown">
-                <li><a href="galery.html">Galerie</a></li>
-                <li><a href="#">Informații</a></li>
-             </ul>
-            </li>
-               <li><a href="index.html">Acasă</a> </li>
-               <li><a href="Contact.html">Date de contact</a> </li>
-             </ul>
+            <ul>
+                <li><a href="#">Activități</a>
+                    <ul class="dropdown">
+                        <li><a href="galery.html">Galerie</a></li>
+                        <li><a href="Info.html">Informații</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">FAQ</a></li>
+                <li><a href="index.html">Specialisti YK</a></li>
+                <li><a href="Voluntari.html">Voluntari</a></li>
+                <li><a href="Contact.html">Date de contact</a></li>
+            </ul>
         </nav>
 
         <div class="off-screen-menu">
-          <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="galery.html">Galerie</a></li>
-            <li><a href="Info.html">Informații</a></li>
-            <li><a href="Contact.html">Date de contact</a></li>
-          </ul>
+            <ul>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="galery.html">Galerie</a></li>
+                <li><a href="Info.html">Informații</a></li>
+                <li><a href="Info.html">Specialisti</a></li>
+                <li><a href="Voluntari.html">Voluntari</a></li>
+                <li><a href="Contact.html">Date de contact</a></li>
+            </ul>
         </div>
-    
-          <div class="ham-menu">
+
+        <div class="ham-menu">
             <span></span>
             <span></span>
-            <span></span> 
-          </div>
-          
+            <span></span>
+        </div>
+
         <script>
             const hamMenu = document.querySelector(".ham-menu");
             const offScreenMenu = document.querySelector(".off-screen-menu");
 
-                hamMenu.addEventListener("click", () => {
+            hamMenu.addEventListener("click", () => {
                 hamMenu.classList.toggle("active");
                 offScreenMenu.classList.toggle("active");
-                });
-          </script>
+            });
+        </script>
     </header>
 
     <div class="image-container">
         <div class="image-wrapper">
-          <div>
-            <img src="img/carusel/img1.jpg" alt="1">
-            <div class="image-caption" id="caption-1"><p>Te salută echipa YK ATIS </p></div>
-          </div>
-          <div>
-            <img src="img/carusel/img2.jpg" alt="2">
-          </div>
-          <div>
-            <img src="img/carusel/img3.jpg" alt="3">
-          </div>
-          <div>
-            <img src="img/carusel/img4.jpg" alt="4">
-          </div>
-          <div>
-            <img src="img/carusel/img5.jpg" alt="5">
-          </div>
-              <script src="js/script_carousel.js"></script>
+            <div>
+                <img src="img/carusel/img1.jpg" alt="1">
+                <div class="image-caption" id="caption-1">
+                    <p>Te salută echipa YK ATIS </p>
+                </div>
+            </div>
+            <div>
+                <img src="img/carusel/img2.jpg" alt="2">
+            </div>
+            <div>
+                <img src="img/carusel/img3.jpg" alt="3">
+            </div>
+            <div>
+                <img src="img/carusel/img4.jpg" alt="4">
+            </div>
+            <div>
+                <img src="img/carusel/img5.jpg" alt="5">
+            </div>
+            <script src="js/script_carousel.js"></script>
         </div>
-      </div> 
-  
-     
+    </div>
 
     <div class="misiune">
         <h1>
             Misiunea principală
-        </h1> 
+        </h1>
     </div>
 
     <div class="principala">
         <section class="about">
             <div class="about-img">
-            <img src="img/misiune.jpg" alt="mission">
+                <img src="img/misiune.jpg" alt="mission">
             </div>
             <div class="about-content">
-        <p>
-              Orientarea spre oferirea serviciilor de sănătate profesioniste și accesibile
-            tinerilor în special a celor aflați în grupurile de risc, punând accent pe îmbunătățirea
-            calității vieții și sănătatea tinerilor din mun. Bălți.Oferirea suport specializat, de a preveni anumite situații problematice și de a găsi
-            soluții concrete pentru problemele de sănătate cu care se confruntă adolescenții și
-            tinerii din Republica Moldova. Ușile centrului YK sunt deschise pentru fiecare tânăr,
-            indiferent de mediul din care vine, problemele pe care le are, stările pe care le
-            trăiește, indiferent de apartenența etnică, limba pe care o vorbește, etc. <br>
-            <b>P.s: Totul este confidențial, gratuit, accesibil, tolerant.</b>
-        </p>
+                <p>
+                    Orientarea spre oferirea serviciilor de sănătate profesioniste și accesibile tinerilor în special a celor aflați în grupurile de risc, punând accent pe îmbunătățirea calității vieții și sănătatea tinerilor din mun. Bălți.Oferirea suport specializat, de a preveni anumite situații problematice și de a găsi soluții concrete pentru problemele de sănătate cu care se confruntă adolescenții și tinerii din Republica Moldova. Ușile centrului YK sunt deschise pentru fiecare tânăr, indiferent de mediul din care vine, problemele pe care le are, stările pe care le trăiește, indiferent de apartenența etnică, limba pe care o vorbește, etc. <br>
+                    <b>P.s: Totul este confidențial, gratuit, accesibil, tolerant.</b>
+                </p>
             </div>
         </section>
     </div>
-       
+
+    <a name="Prob"></a>
     <div class="misiune">
-      <h1>
-          7 probleme principale cu care se 
-          întâlnește un adolescent
-      </h1> 
-  </div>
+        <h1 id="problema">
+            7 probleme principale cu care se întâlnește un adolescent
+        </h1>
+    </div>
 
-  <div class="container">
-    <section class="problem">
-      <ul id="pro">
-        <li>
-          <span class="number">1</span>
-          <span class="name">Probleme de identitate</span>
-        </li>
-        <li>
-          <span class="number">2</span>
-          <span class="name">Stresul academic</span>
-        </li>
-        <li>
-          <span class="number">3</span>
-          <span class="name">Probleme legate de imaginea corporală</span>
-        </li>
-        <li>
-          <span class="number">4</span>
-          <span class="name">Relațiile interpersonale</span>
-        </li>
-        <li>
-          <span class="number">5</span>
-          <span class="name">Depresia și anxietatea</span>
-        </li>
-        <li>
-          <span class="number">6</span>
-          <span class="name">Consumul de substanțe</span>
-        </li>
-        <li>
-          <span class="number">7</span>
-          <span class="name">Probleme de sănătate sexuală și reproductive</span>
-        </li>
-      </ul>
-    </section>
-    <section class="scrie-problema">
-      <h2 id="pr">Scrie problema ta</h2>
-      <div class="form">
-        <form method="GET" action="mailto:voluntari5atis@gmail.com">
-          <input type="text" placeholder="Numele tău" id="name" autocomplete="off">
-          <input type="email" placeholder="Email-ul" id="email" autocomplete="off">
-          <input type="text" placeholder="Subiectul" id="subject" autocomplete="off">
-          <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
-          <button name="butn" type="submit">Trimite</button>
-        </form>
+    <div class="container">
+        <section class="problem">
+            <ul id="pro">
+                <li>
+                    <span class="number">1</span>
+                    <span class="name">Probleme de identitate</span>
+                </li>
+                <li>
+                    <span class="number">2</span>
+                    <span class="name">Stresul academic</span>
+                </li>
+                <li>
+                    <span class="number">3</span>
+                    <span class="name">Probleme legate de imaginea corporală</span>
+                </li>
+                <li>
+                    <span class="number">4</span>
+                    <span class="name">Relațiile interpersonale</span>
+                </li>
+                <li>
+                    <span class="number">5</span>
+                    <span class="name">Depresia și anxietatea</span>
+                </li>
+                <li>
+                    <span class="number">6</span>
+                    <span class="name">Consumul de substanțe</span>
+                </li>
+                <li>
+                    <span class="number">7</span>
+                    <span class="name">Probleme de sănătate sexuală și reproductive</span>
+                </li>
+            </ul>
+        </section>
+
+        <section class="scrie-problema">
+
+            <h2 id="pr">Scrie problema ta</h2>
+            <div class="form">
+                <form method="GET" action="mailto:voluntari5atis@gmail.com">
+                    <input type="text" placeholder="Numele tău" id="name" autocomplete="off">
+                    <input type="email" placeholder="Email-ul" id="email" autocomplete="off">
+                    <input type="text" placeholder="Subiectul" id="subject" autocomplete="off">
+                    <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
+                    <button name="butn" type="submit">Trimite</button>
+                </form>
+            </div>
+
+            <script>
+                var form = document.getElementsByTagName('form')[0];
+                form.addEventListener('submit', contact, false);
+
+                function contact(e) {
+                    e.preventDefault();
+
+                    var target = e.target || e.srcElement;
+                    var i = 0;
+                    var message = '';
+
+                    for (i = 0; i < target.length; ++i) {
+                        if (target[i].type != 'text' && target[i].type != 'textarea') {
+                            continue;
+                        }
+
+                        message += target[i].name + ': ' + target[i].value + "\r\n";
+                    }
+                    target.elements["body"].value = message;
+
+                    this.submit();
+                }
+            </script>
+
+        </section>
+    </div>
+
+    <div class="misiune">
+        <h1>
+            De ce poți profita la noi?
+        </h1>
+    </div>
+
+    <div id="list">
+        <div class="conteiner">
+            <div class="box">
+                <h2>01</h2>
+                <h3>Contraceptive</h3>
+                <p>
+                    Aceste opțiuni îți oferă posibilitatea de a lua decizii informate și de a găsi soluția potrivită 
+                    pentru nevoile și preferințele tale în ceea ce privește controlul nașterilor. Poți beneficia de 
+                    aceste informații pentru a-ți gestiona sănătatea sexuală și reproductive în mod responsabil și 
+                    eficient.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>02</h2>
+                <h3>Test la hiv</h3>
+                <p>
+                    Verificăte dacă ești în risc!!
+                </p>
+                <button class="alt" style="background-color: #45a049">Test</button>
+            </div>
+
+            <div class="box">
+                <h2>03</h2>
+                <h3>Tratament</h3>
+                <p>
+                    Este setul de servicii medicale care include activităţi de profilaxie, de consultanţă cu 
+                    scop curativ şi de suport acordate de medicul specialist la care se adresează tânărul/a. 
+                    La necesitate specialistul indică tratament și poate elibera medicamente gratuite, disponibile 
+                    în stoc.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+      <div >
+      <div class="row">
+      <a href="https://www.instagram.com/yk.atis/" target="_blank"><img src="img/icons/instagram.png" alt="insta"></a>
+      <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a>
+      <a href="https://www.tiktok.com/@yk.atis" target="_blank"><img src="img/icons/tiktok.png" alt="tiktok"></a>
       </div>
-
-      <script>
-        var form = document.getElementsByTagName('form')[0];
-        form.addEventListener('submit',contact,false);
-        function contact(e) {
-           e.preventDefault();
-     
-           var target = e.target || e.srcElement;
-           var i = 0;
-           var message = '';
-     
-           for(i = 0; i < target.length; ++i) {
-              if(target[i].type != 'text' && target[i].type != 'textarea') {
-                 continue;
-              }
-     
-              message += target[i].name + ': ' + target[i].value + "\r\n";
-           }
-           target.elements["body"].value = message;
-     
-           this.submit();
-        }
-     </script>
-
-      <!--<script src="https://smtpjs.com/v3/smtp.js">
-      </script>
-
-      <script>
-        var btn = document.getElementsByName('butn');
-        btn.addEventListener('click', function(e){
-            e.preventDefault()
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var subject = document.getElementById('subject').value;
-            var message = document.getElementById('mesage').value;
-            var body = 'name: '+ name + '<br/> email: ' + email
-            + '<br/>subject:' + subject + '<br/> message' + message;
-
-            Email.send({
-    Host : "smtp.gmail.com",
-    Username : "voluntari5atis@gmail.com",
-    Password : "password",
-    To : 'voluntari5atis@gmail.com',
-    From : email,
-    Subject : subject,
-    Body : body
-}).then(
-  message => alert(message)
-);
-        })
-      </script>-->
       
-    </section>
-  </div>
-  
-  <div class="misiune">
-    <h1>
-        De ce poți profita la noi?
-    </h1> 
-</div> 
-
-<div id="list">
-<div class="conteiner">
-  <div class="box">
-    <h2>01</h2>
-    <h3>Contraceptive</h3>
-    <p>
-      Aceste opțiuni îți oferă posibilitatea de a lua decizii 
-      informate și de a găsi soluția potrivită pentru nevoile
-       și preferințele tale în ceea ce privește controlul 
-       nașterilor. Poți beneficia de aceste informații pentru 
-       a-ți gestiona sănătatea sexuală și reproductive în mod 
-       responsabil și eficient.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>02</h2>
-    <h3>Test la hiv</h3>
-    <p>
-      Verificăte dacă ești în risc!!
-    </p>
-    <button class="alt" style="background-color: #45a049">Test</button>
-  </div>
-
-  <div class="box">
-    <h2>03</h2>
-    <h3>Tratament</h3>
-    <p>
-      Este setul de servicii medicale care include
-      activităţi de profilaxie, de consultanţă cu scop 
-      curativ şi de suport acordate de medicul specialist 
-      la care se adresează tânărul/a. La necesitate 
-      specialistul indică tratament și poate elibera medicamente
-      gratuite, disponibile în stoc.
-    </p>
-  </div>
-</div>
-  
-<div class="misiune">
-  <h1>
-      Excursia virtuală prin ATIS
-  </h1> 
-</div> 
-<section class="trip">
- <video src="video/excursie.MOV" width="500px; height: 300px" controls></video>
-</section>
-
-<footer class="footer">
-  <div >
-  <div class="row">
-  <a href="https://www.instagram.com/yk.atis/" target="_blank"><img src="img/icons/instagram.png" alt="insta"></a>
-  <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a>
-  <a href="https://www.tiktok.com/@yk.atis" target="_blank"><img src="img/icons/tiktok.png" alt="tiktok"></a>
-  </div>
-  
-  <div class="row">
-  <ul>
-  <li><a href="#">Galerieia evenimentelor</a></li>
-  <li><a href="#">Informații despre noi</a></li>
-  <li><a href="#">Date de contact</a></li>
-  <li><a href="#">Scrie problema ta</a></li>
-  <li><a href="#">Despre voluntariat</a></li>
-  </ul>
-  </div>
-  
-  <div class="row" style="font-size: 0.8em;">
-    Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
-    organizată de proiectul ”Tekwill în Fiecare Școală”.
-  </div>
-  </div>
-  </footer>
+      <div class="row">
+      <ul>
+      <li><a href="galery.html">Galerieia evenimentelor</a></li>
+      <li><a href="#">Informații despre noi</a></li>
+      <li><a href="Contact.html">Date de contact</a></li>
+      <li><a href="#Prob">Scrie problema ta</a></li>
+      <li><a href="#">Despre voluntariat</a></li>
+      </ul>
+      </div>
+      
+      <div class="row" style="font-size: 0.8em;">
+        Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
+        organizată de proiectul ”Tekwill în Fiecare Școală”.
+      </div>
+      </div>
+      </footer>  
 </body>
+
 </html>

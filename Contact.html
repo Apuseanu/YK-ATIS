@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style_c.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="icon" href="img/icons/icon.png">
     <title>Date de contact</title>
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+            crossorigin="anonymous">
+    </script>
+
 </head>
 <body>
     <header class="header">
@@ -19,68 +26,132 @@
         </h1>
 
         <nav class="nav-bar">
-            <ul>  
-            <li ><a href="#">Activități</a>
-             <ul class="dropdown">
-                <li><a href="galery.html">Galerie</a></li>
-                <li><a href="#">Informații</a></li>
-             </ul>
-            </li>
-               <li><a href="index.html">Acasă</a> </li>
-               <li><a href="#">Date de contact</a> </li>
-             </ul>
-        </nav>
-
-        <div class="off-screen-menu">
           <ul>
-            <li><a href="index.html">Acasă</a></li>
-            <li><a href="galery.html">Galerie</a></li>
-            <li><a href="Info.html">Informații</a></li>
-            <li><a href="Contact.html">Date de contact</a></li>
+              <li><a href="#">Activități</a>
+                  <ul class="dropdown">
+                      <li><a href="galery.html">Galerie</a></li>
+                      <li><a href="Info.html">Informații</a></li>
+                  </ul>
+              </li>
+              <li><a href="index.html">FAQ</a></li>
+              <li><a href="index.html">Specialisti YK</a></li>
+              <li><a href="">Voluntari</a></li>
+              <li><a href="Contact.html">Date de contact</a></li>
           </ul>
-        </div>
-    
-          <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span> 
-          </div>
-          
-        <script>
-            const hamMenu = document.querySelector(".ham-menu");
-            const offScreenMenu = document.querySelector(".off-screen-menu");
+      </nav>
 
-                hamMenu.addEventListener("click", () => {
-                hamMenu.classList.toggle("active");
-                offScreenMenu.classList.toggle("active");
-                });
-          </script>
+      <div class="off-screen-menu">
+          <ul>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="galery.html">Galerie</a></li>
+              <li><a href="Info.html">Informații</a></li>
+              <li><a href="Info.html">Specialisti</a></li>
+              <li><a href="Info.html">Voluntari</a></li>
+              <li><a href="Contact.html">Date de contact</a></li>
+          </ul>
+      </div>
+
+      <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <script>
+          const hamMenu = document.querySelector(".ham-menu");
+          const offScreenMenu = document.querySelector(".off-screen-menu");
+
+          hamMenu.addEventListener("click", () => {
+              hamMenu.classList.toggle("active");
+              offScreenMenu.classList.toggle("active");
+          });
+      </script>
     </header>
-       <div class="co">
-        <div class="cutie">
-            <h1>Pentru a afla mai mult:</h1>
-            <div class="slot">
-              <img src="img/icons/phone-call.png">
-               <h2> 0231-4-64-62 </h2>
-            </div>
+      
+    <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Află mai mult unde suntem!</h3>
+          <p class="text">
+            Aici poți găsi toate contactele noastre și deasemenea
+            observați pe hartă locația noastră.
+          </p>
 
-            <div class="slot">
-              <img src="img/icons/email.png">
-               <h2> cspt.atis@mail.com </h2>
+          <div class="info">
+            <div class="information">
+              <img src="img/icons/gps.png" class="icon" alt="" />
+              <p>mun. Bălți, str. Kiev, 30</p>
             </div>
+            <div class="information">
+              <img src="img/icons/email.png" class="icon" alt="" />
+              <p>cspt.atis@mail.ru</p>
+            </div>
+            <div class="information">
+              <img src="img/icons/phone-call.png" class="icon" alt="" />
+              <p>0231-4-64-62</p>
+            </div>
+          </div>
 
-            <div class="slot">
-              <a href="https://www.facebook.com/ykAtis.Balti/"><img class="social" src="img/icons/facebook.png"> </a>
-              <a href="https://www.tiktok.com/@yk.atis"><img class="social" src="img/icons/tiktok.png"> </a>
-              <a href="https://www.instagram.com/yk.atis/"><img class="social" src="img/icons/instagram.png"> </a>
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.tiktok.com/@yk.atis" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+              <a href="https://www.instagram.com/yk.atis/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
             </div>
+          </div>
         </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+
 
 <div class="loc">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.9574203987486!2d27.92307797700693!3d47.78227367120656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb61161056a923%3A0x748b256919543dd3!2sYouth%20Klinic%20ATIS!5e0!3m2!1sru!2s!4v1708796582301!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="hedi">
+    <h2>Uite unde ne aflăm</h2>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2680.9574242275216!2d27.920781992598044!3d47.78227359696496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb61161056a923%3A0x748b256919543dd3!2sYouth%20Klinic%20ATIS!5e0!3m2!1sru!2s!4v1709212908642!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+   referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-
-       </div>
 
     <footer class="footer">
         <div >
@@ -92,17 +163,17 @@
         
         <div class="row">
         <ul>
-        <li><a href="#">Galerieia evenimentelor</a></li>
+        <li><a href="galery.html">Galerieia evenimentelor</a></li>
         <li><a href="#">Informații despre noi</a></li>
-        <li><a href="#">Date de contact</a></li>
-        <li><a href="#">Scrie problema ta</a></li>
-        <li><a href="#">Despre voluntariat</a></li>
+        <li><a href="Contact.html">Date de contact</a></li>
+        <li><a href="index.html #Prob">Scrie problema ta</a></li>
+        <li><a href="Voluntariat.html">Despre voluntariat</a></li>
         </ul>
         </div>
         
         <div class="row" style="font-size: 0.8em;">
-          Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
-          organizată de proiectul ”Tekwill în Fiecare Școală”.
+          <p> Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
+          organizată de proiectul ”Tekwill în Fiecare Școală”. </p>
         </div>
         </div>
         </footer>
