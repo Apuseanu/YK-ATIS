@@ -345,11 +345,14 @@
     
       .part {
         flex-direction: column;
+        margin-top: 5px;
+
       }
     
       .card {
         width: 100%;
-        margin: 10px;
+        margin: 0px;
+        margin-bottom: 5px;
       }
     
       .content h3 {
@@ -361,8 +364,12 @@
         padding: 5px 10px;
       }
     
+.modal{
+  width: 100%;
+}
+
       .modal-content {
-        width: 90%;
+        width: 80%;
       }
     
       .modal-content p {
