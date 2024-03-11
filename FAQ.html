@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style_faq.css">
     <link rel="icon" href="img/icons/icon.png">
     <title>FAQ</title>
 </head>
@@ -62,13 +64,139 @@
         </script>
     </header>
 
-<div class="warp">
-    <h1>cele mai des acordate întrebări</h1>
+    
+    <div class="wrapper">
+        <h1>Cele Mai Des Adresate Întrebări</h1>
+  
+        <div class="faq">
+          <button class="accordion">
+            What is Krushi?
+          </button>
+          <div class="pannel">
+            <p>
+              Krushi is a Public Charitable Trust designed to carry out farming on
+              extensive scale Natural & Sustainable methods.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            How does it work?
+          </button>
+          <div class="pannel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+              ullam, iure eligendi harum eaque hic corporis debitis porro
+              consectetur voluptate rem officiis architecto.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            What are the major challanges of current agriculture?
+          </button>
+          <div class="pannel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+              ullam, iure eligendi harum eaque hic corporis debitis porro
+              consectetur voluptate rem officiis architecto.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            How does the Krushi address the above challanges?
+          </button>
+          <div class="pannel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+              ullam, iure eligendi harum eaque hic corporis debitis porro
+              consectetur voluptate rem officiis architecto.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            How can I be a part of Krushi?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+              ullam, iure eligendi harum eaque hic corporis debitis porro
+              consectetur voluptate rem officiis architecto.
+            </p>
+          </div>
+        </div>
+  
+        <div class="faq">
+          <button class="accordion">
+            How does it work?
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="pannel">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+              saepe molestiae distinctio asperiores cupiditate consequuntur dolor
+              ullam, iure eligendi harum eaque hic corporis debitis porro
+              consectetur voluptate rem officiis architecto.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+  
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            this.parentElement.classList.toggle("active");
+  
+            var pannel = this.nextElementSibling;
+  
+            if (pannel.style.display === "block") {
+              pannel.style.display = "none";
+            } else {
+              pannel.style.display = "block";
+            }
+          });
+        }
+      </script>
 
-    <div class="faq">
-        <button></button>
+
+<footer class="footer">
+    <div >
+    <div class="row">
+    <a href="https://www.instagram.com/yk.atis/" target="_blank"><img src="img/icons/instagram.png" alt="insta"></a>
+    <a href="https://www.facebook.com/ykAtis.Balti/" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a>
+    <a href="https://www.tiktok.com/@yk.atis" target="_blank"><img src="img/icons/tiktok.png" alt="tiktok"></a>
     </div>
-</div>
-
+    
+    <div class="row">
+    <ul>
+    <li><a href="galery.html">Galerieia evenimentelor</a></li>
+    <li><a href="#">Informații despre noi</a></li>
+    <li><a href="Contact.html">Date de contact</a></li>
+    <li><a href="#Prob">Scrie problema ta</a></li>
+    <li><a href="#">Despre voluntariat</a></li>
+    </ul>
+    </div>
+    
+    <div class="row" style="font-size: 0.8em;">
+      Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” 
+      organizată de proiectul ”Tekwill în Fiecare Școală”.
+    </div>
+    </div>
+    </footer>  
 </body>
 </html>
