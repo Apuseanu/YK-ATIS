@@ -155,37 +155,55 @@
             <h2 id="pr">Scrie problema ta</h2>
             <div class="form">
                 <form method="GET" action="mailto:voluntari5atis@gmail.com">
-                    <input type="text" placeholder="Numele tău" id="name" autocomplete="off">
-                    <input type="email" placeholder="Email-ul" id="email" autocomplete="off">
-                    <input type="text" placeholder="Subiectul" id="subject" autocomplete="off">
-                    <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
-                    <button name="butn" type="submit">Trimite</button>
+                  <input type="text" placeholder="Numele tău" id="name" autocomplete="off">
+                  <input type="email" placeholder="Email-ul" id="email" autocomplete="off">
+                  <input type="text" placeholder="Subiectul" id="subject" autocomplete="off">
+                  <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
+                  <button name="butn" type="submit" id="submit-button">  Trimite </button>         
+                  <input type="hidden" name="body" />
                 </form>
-            </div>
-
-            <script>
-                var form = document.getElementsByTagName('form')[0];
-                form.addEventListener('submit', contact, false);
-
-                function contact(e) {
-                    e.preventDefault();
-
-                    var target = e.target || e.srcElement;
-                    var i = 0;
-                    var message = '';
-
-                    for (i = 0; i < target.length; ++i) {
-                        if (target[i].type != 'text' && target[i].type != 'textarea') {
-                            continue;
-                        }
-
-                        message += target[i].name + ': ' + target[i].value + "\r\n";
+              
+                <script>
+                  const form = document.querySelector('form');
+                  const submitButton = document.querySelector('#submit-button');
+              
+                  form.addEventListener('submit', (event) => {
+                    event.preventDefault();
+              
+                    const name = document.querySelector('#name').value.trim();
+                    const email = document.querySelector('#email').value.trim();
+                    const subject = document.querySelector('#subject').value.trim();
+                    const message = document.querySelector('#mesage').value.trim();
+              
+                    if (name === '') {
+                      alert('Please enter your name');
+                      return;
                     }
-                    target.elements["body"].value = message;
+              
+                    if (!validateEmail(email)) {
+                      alert('Please enter a valid email address ending with @gmail.com');
+                      return;
+                    }
+              
+                    if (subject === '') {
+                      alert('Please enter a subject');
+                      return;
+                    }
+              
+                    if (message === '') {
+                      alert('Please enter a message');
+                      return;
+                    }
+                });
+              
+                  function validateEmail(email) {
+                    const re = /^[^@]+@gmail\.com$/;
+                    return re.test(email);
+                  }
+                </script>
 
-                    this.submit();
-                }
-            </script>
+              </div>
+
 
         </section>
     </div>
