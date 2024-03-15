@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 15px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: #654389;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: #654389;
+}
+
+.question {
+      margin-bottom: 10px;
+    }
+    .options label {
+      cursor: pointer;
+    }
+    .results {
+      margin-top: 20px;
+      display: none;
+    }
+    .results.visible {
+      display: block;
+    }
+</style>
+</head>
+<body>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>TEST HIV</h2>
+    </div>
+    <div class="modal-body">
+      <form id="quiz">
+    <div class="question">
+      <h2>1. Ai auzit despre HIV sau SIDA?</h2>
+      <label><input type="radio" name="q1" value="yellow"> Nu</label>
+      <label><input type="radio" name="q1" value="green"> Da</label>
+    </div>
+    <div class="question">
+      <h2>2. Which of the following is not a JavaScript operator?</h2>
+      <label><input type="radio" name="q2" value="red"> Equal to</label>
+      <label><input type="radio" name="q2" value="yellow"> Not equal to</label>
+      <label><input type="radio" name="q2" value="green"> Addition</label>
+    </div>
+    <div class="question">
+      <h2>3. Which of the following is not a JavaScript control structure?</h2>
+      <label><input type="radio" name="q3" value="red"> If statement</label>
+      <label><input type="radio" name="q3" value="yellow"> For loop</label>
+      <label><input type="radio" name="q3" value="green"> Switch statement</label>
+    </div>
+    <div class="question">
+      <h2>4. Which of the following is not a JavaScript reserved word?</h2>
+      <label><input type="radio" name="q4" value="red"> Da </label>
+      <label><input type="radio" name="q4" value="green"> Nu </label>
+    </div>
+    <div class="question">
+      <h2>5. Which of the following is not a JavaScript built-in object?</h2>
+      <label><input type="radio" name="q5" value="red"> Math</label>
+      <label><input type="radio" name="q5" value="yellow"> Date</label>
+      <label><input type="radio" name="q5" value="green"> Array</label>
+    </div>
+    <div class="question">
+      <h2>6. Which of the following is not a JavaScript event?</h2>
+      <label><input type="radio" name="q6" value="red"> Click</label>
+      <label><input type="radio" name="q6" value="yellow"> Double click</label>
+      <label><input type="radio" name="q6" value="green"> Mouse over</label>
+    </div>
+    < <div class="question">
+      <h2>7. Which of the following is not a JavaScript DOM method?</h2>
+      <label><input type="radio" name="q7" value="yellow"> getElementById</label>
+      <label><input type="radio" name="q7" value="green"> getElementsByClassName</label>
+    </div>
+    <div class="question">
+      <h2>8. Which of the following is not a JavaScript error message?</h2>
+      <label><input type="radio" name="q8" value="red"> SyntaxError: Unexpected token</label>
+      <label><input type="radio" name="q8" value="green"> ReferenceError: x is not defined</label>
+    </div>
+    <div class="question">
+      <h2>9. Which of the following is not a JavaScript comment?</h2>
+      <label><input type="radio" name="q9" value="red"> // This is a single-line comment</label>
+      <label><input type="radio" name="q9" value="green"> /* This is a multi-line comment */</label>
+    </div>
+    <button type="button" id="submit" onclick="event.preventDefault(); checkAnswers()">Submit</button>
+  </form>
+  <div id="results" class="results">
+    <h2>Rezultate</h2>
+    <p id="advice"></p>
+  </div>
+  <script>
+    function checkAnswers() {
+      const inputs = document.querySelectorAll("input[type='radio']:checked");
+      let red = 0;
+      let yellow = 0;
+      let green = 0;
+
+      inputs.forEach(input => {
+        const color = input.value;
+        if (color === "red") {
+          red++;
+        } else if (color === "yellow") {
+          yellow++;
+        } else if (color === "green") {
+          green++;
+        }
+      });
+
+      const total = red + yellow + green;
+      let message;
+
+      if (red > total / 3) {
+        message = "Fugi";
+      } else if (yellow > total / 3) {
+        message = "Risc mic";
+      } else {
+        message = "Bravo!";
+      }
+
+      document.getElementById("results").classList.add("visible");
+      document.getElementById("advice").textContent = message;
+    }
+  </script>
+    </div>
+    <div class="modal-footer">
+      <h3>YK ATIS</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
