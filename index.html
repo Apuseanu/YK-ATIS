@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <a name="Prob"></a>
+    <a name="mis"></a>
     <div class="misiune">
         <h1>
             Misiunea principală
@@ -155,15 +155,32 @@
 
             <h2 id="pr">Scrie problema ta</h2>
             <div class="form">
-                <form method="GET" action="mailto:voluntari5atis@gmail.com">
-                  <input type="text" placeholder="Numele tău" id="name" autocomplete="off">
-                  <input type="email" placeholder="Email-ul" id="email" autocomplete="off">
-                  <input type="text" placeholder="Subiectul" id="subject" autocomplete="off">
+           <!--     <form action="https://formsubmit.co/voluntari5atis@gmail.com" method="POST">
+                  <input name="Nume" type="text" placeholder="Numele tău" id="name" autocomplete="on">
+                  <input name="email" type="email" placeholder="Email-ul" id="email" autocomplete="on">
+                  <input name="subiect" type="text" placeholder="Subiectul" id="subject" autocomplete="off">
                   <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
-                  <button name="butn" type="submit" id="submit-button">  Trimite </button>         
-                  <input type="hidden" name="body" />
+                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>    
                 </form>
-              
+            -->
+            
+            <form target="_blank" action="https://formsubmit.co/a637df85fd6dfa977a391a65b5b2393b" method="POST">
+                <div class="form-group">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col">
+                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              </form>
+
                 <script>
                   const form = document.querySelector('form');
                   const submitButton = document.querySelector('#submit-button');
@@ -177,22 +194,22 @@
                     const message = document.querySelector('#mesage').value.trim();
               
                     if (name === '') {
-                      alert('Please enter your name');
+                      alert('Vă rog introduceți numele');
                       return;
                     }
               
                     if (!validateEmail(email)) {
-                      alert('Please enter a valid email address ending with @gmail.com');
+                      alert('Vă rog introduceți un email vali cu sfârșitul @gmail.com');
                       return;
                     }
               
                     if (subject === '') {
-                      alert('Please enter a subject');
+                      alert('Scrieți un subiect!');
                       return;
                     }
               
                     if (message === '') {
-                      alert('Please enter a message');
+                      alert('Scrieți mesajul pe care îl doriți');
                       return;
                     }
                 });
@@ -235,9 +252,9 @@
                     Verificăte dacă ești în risc!!
                 </p>
 
-             <button id="myBtn">Testează-te</button>
-
                 <object style="position: relative; z-index: 1000;" data="modal.html" width="100%" height="100%"></object>
+
+               
 
             </div>
           
@@ -277,7 +294,7 @@
       <div class="row">
       <ul>
       <li><a href="galery.html">Galerieia evenimentelor</a></li>
-      <li><a href="#">Informații despre noi</a></li>
+      <li><a href="#mis">Informații despre noi</a></li>
       <li><a href="Contact.html">Date de contact</a></li>
       <li><a href="#Prob">Scrie problema ta</a></li>
       <li><a href="Voluntari.html">Despre voluntariat</a></li>

@@ -1,0 +1,90 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 15px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+  
+
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: #654389;
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: #654389;
+  }
+  
+  .question {
+        margin-bottom: 10px;
+      }
+      .options label {
+        cursor: pointer;
+      }
+      .results {
+        margin-top: 20px;
+        display: none;
+      }
+      .results.visible {
+        display: block;
+      }
+
+      #myBtn{
+        padding: 3px;
+        width: 150px;
+        height: 50px;
+        background: #5cb85c;
+        font-size: 20px;
+        border: 0;
+        border-radius: 40%;
+        transition: 0.5s;
+      }
+
+      #myBtn:hover{
+        background: #654389;
+        border-radius: 45%;
+        color: #fefefe;
+      }
+
