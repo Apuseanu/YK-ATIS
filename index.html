@@ -160,57 +160,15 @@
         <section class="scrie-problema">
 
             <h2 id="pr">Scrie problema ta</h2>
-         <!--   <div class="form">
+          <div class="form">
                 <form action="https://formsubmit.co/voluntari5atis@gmail.com" method="POST">
-                  <input name="Nume" type="text" placeholder="Numele tău" id="name" autocomplete="on">
-                  <input name="email" type="email" placeholder="Email-ul" id="email" autocomplete="on">
-                  <input name="subiect" type="text" placeholder="Subiectul" id="subject" autocomplete="off">
-                  <textarea name="mesaj" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
+                  <input name="name" type="text" placeholder="Numele tău" id="name" autocomplete="on" required>
+                  <input name="email" type="email" placeholder="Email-ul" id="email" autocomplete="on" required>
+                  <input name="subject" type="text" placeholder="Subiectul" id="subject" autocomplete="off" required>
+                  <textarea name="message" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
                   <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>    
                 </form>
-            -->
-            
-            <div class="row">
-                <div class="col-5">
-                  <h1 class="mb-5">Contact Us</h1>
-                  <form
-                    action="https://formsubmit.co/voluntari5atis@gmail.com"
-                    method="POST"
-                  >
-                    <div class="mb-3">
-                      <label class="form-label">Full Name</label>
-                      <input name="name" type="text" class="form-control" required />
-                    </div>
-        
-                    <div class="mb-3">
-                      <label class="form-label">Email address</label>
-                      <input name="email" type="email" class="form-control" required />
-                      <div id="emailHelp" class="form-text">
-                        Don't worry, we won't share it with anyone else.
-                      </div>
-                    </div>
-        
-                    <div class="mb-3">
-                      <label class="form-label">Phone (optional)</label>
-                      <input name="phone" \type="tel" class="form-control" />
-                      <div id="phoneHelp" class="form-text">
-                        If you rather talk to a human directly.
-                      </div>
-                    </div>
-        
-                    <div class="mb-3">
-                      <label class="form-label">Your Message</label>
-                      <textarea
-                        name="message"
-                        class="form-control"
-                        rows="3"
-                        required
-                      ></textarea>
-                    </div>
-        
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
+           
 
                 <script>
                   const form = document.querySelector('form');
