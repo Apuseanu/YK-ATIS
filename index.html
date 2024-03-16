@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://bootswatch.com/5/sandstone/bootstrap.min.css"
+  />
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="icon" href="img/icons/icon.png">
@@ -154,8 +160,8 @@
         <section class="scrie-problema">
 
             <h2 id="pr">Scrie problema ta</h2>
-            <div class="form">
-           <!--     <form action="https://formsubmit.co/voluntari5atis@gmail.com" method="POST">
+         <!--   <div class="form">
+                <form action="https://formsubmit.co/voluntari5atis@gmail.com" method="POST">
                   <input name="Nume" type="text" placeholder="Numele tău" id="name" autocomplete="on">
                   <input name="email" type="email" placeholder="Email-ul" id="email" autocomplete="on">
                   <input name="subiect" type="text" placeholder="Subiectul" id="subject" autocomplete="off">
@@ -164,22 +170,47 @@
                 </form>
             -->
             
-            <form target="_blank" action="https://formsubmit.co/a637df85fd6dfa977a391a65b5b2393b" method="POST">
-                <div class="form-group">
-                  <div class="form-row">
-                    <div class="col">
-                      <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            <div class="row">
+                <div class="col-5">
+                  <h1 class="mb-5">Contact Us</h1>
+                  <form
+                    action="https://formsubmit.co/voluntari5atis@gmail.com"
+                    method="POST"
+                  >
+                    <div class="mb-3">
+                      <label class="form-label">Full Name</label>
+                      <input name="name" type="text" class="form-control" required />
                     </div>
-                    <div class="col">
-                      <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        
+                    <div class="mb-3">
+                      <label class="form-label">Email address</label>
+                      <input name="email" type="email" class="form-control" required />
+                      <div id="emailHelp" class="form-text">
+                        Don't worry, we won't share it with anyone else.
+                      </div>
                     </div>
-                  </div>
+        
+                    <div class="mb-3">
+                      <label class="form-label">Phone (optional)</label>
+                      <input name="phone" \type="tel" class="form-control" />
+                      <div id="phoneHelp" class="form-text">
+                        If you rather talk to a human directly.
+                      </div>
+                    </div>
+        
+                    <div class="mb-3">
+                      <label class="form-label">Your Message</label>
+                      <textarea
+                        name="message"
+                        class="form-control"
+                        rows="3"
+                        required
+                      ></textarea>
+                    </div>
+        
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-              </form>
 
                 <script>
                   const form = document.querySelector('form');
