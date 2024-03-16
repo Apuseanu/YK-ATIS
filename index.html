@@ -160,49 +160,12 @@
                   <input name="email" type="email" placeholder="Email-ul" id="email" autocomplete="on" required>
                   <input name="subject" type="text" placeholder="Subiectul" id="subject" autocomplete="off" required>
                   <textarea name="message" placeholder="Scrie mesajul.." id="mesage" cols="30" rows="10"></textarea>
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>    
-                </form>
+                  <button name="button" type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>    
+                
            
 
-                <script>
-                  const form = document.querySelector('form');
-                  const submitButton = document.querySelector('#submit-button');
-              
-                  form.addEventListener('submit', (event) => {
-                    event.preventDefault();
-              
-                    const name = document.querySelector('#name').value.trim();
-                    const email = document.querySelector('#email').value.trim();
-                    const subject = document.querySelector('#subject').value.trim();
-                    const message = document.querySelector('#mesage').value.trim();
-              
-                    if (name === '') {
-                      alert('Vă rog introduceți numele');
-                      return;
-                    }
-              
-                    if (!validateEmail(email)) {
-                      alert('Vă rog introduceți un email vali cu sfârșitul @gmail.com');
-                      return;
-                    }
-              
-                    if (subject === '') {
-                      alert('Scrieți un subiect!');
-                      return;
-                    }
-              
-                    if (message === '') {
-                      alert('Scrieți mesajul pe care îl doriți');
-                      return;
-                    }
-                });
-              
-                  function validateEmail(email) {
-                    const re = /^[^@]+@gmail\.com$/;
-                    return re.test(email);
-                  }
-                </script>
-
+               
+</form>
               </div>
 
 
