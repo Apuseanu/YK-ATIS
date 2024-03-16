@@ -63,3 +63,11 @@
   .faq.active {
     border: none;
   }
+
+  @media screen and (max-width:768px) {
+    .pannel p{ 
+      font-size: 0.6rem;
+      line-height: 1;
+    }
+
+  }
