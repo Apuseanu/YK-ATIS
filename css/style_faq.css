@@ -65,9 +65,22 @@
   }
 
   @media screen and (max-width:768px) {
-    .pannel p{ 
-      font-size: 0.6rem;
+    .pannel ul{ 
+      margin-top: -40px;
+      font-size: 0.8rem;
       line-height: 1;
     }
 
+    .pannel p {
+      margin-top: 20px;
+    }
+
+    .pannel{
+      height: 200px;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: rgb(34, 37, 49);
+    }
   }
