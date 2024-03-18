@@ -240,7 +240,45 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
   }
 
+  .vyk {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #409c53;
+    padding: 40px;
+    box-shadow: 2px 5px 2px #76638894;
+    margin-top: -20px;
+    height: 830px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.vyk h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 110px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(173, 172, 172, 0.3);
+    width: 50%;
+    color: #54c069;
+}
+
+.vyk p {
+    padding-left: 110px;
+    margin: 0;
+    line-height: 1.5;
+    width: 50%;
+    color: #48aa5c;
+}
+
+.vyk img {
+    width: 35%;
+    height: 65%;
+    margin-top: 10px;
+    margin-right: 65px;
+    border-radius: 40%;
+}
 
   @media screen and (max-width: 768px) {
     body{
@@ -336,6 +374,36 @@
       }
     
       .mot img {
+        width: 90%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 0px;
+      }
+
+      .vyk {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow-x: hidden;
+        padding: 20px;
+      }
+    
+      .vyk h2 {
+        font-size: 1.5em;
+        width: 100%;
+        margin-left: -110px;
+        text-align: center;
+      }
+    
+      .vyk p {
+        width: 90%;
+        font-size: 1em;
+        margin-left: -100px;
+        text-align: justify;
+      }
+
+      .vyk img {
         width: 90%;
         height: auto;
         margin-right: 0;
