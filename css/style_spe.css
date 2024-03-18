@@ -87,15 +87,19 @@
     cursor: pointer;
   }
 
-  .modal-content img{
-    width: 50%;
+  .modal-content {
+    align-items: center;
+  }
+
+  .modal-content input {
+    border-radius: 5%;
+
   }
 
   .modal-content p {
     width: 40%;
-    float: right;
     font-size: 18px;
-    margin-top: 80px;
+    margin-top: 3px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
   }
 
