@@ -25,7 +25,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.8rem;
         transition: .3s ease;
     }
     
@@ -41,7 +41,7 @@
     }
     
     .off-screen-menu li {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     
     .off-screen-menu a {
@@ -57,7 +57,7 @@
 
     ul {
         left: 0%; 
-        top: 70px;
+        top: 50px;
         gap: 0;
         flex-direction: column;
         position: relative;
