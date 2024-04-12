@@ -447,7 +447,7 @@ button {
 }
 
 .conteiner .box {
-  flex-basis: calc(33.33% - 20px); 
+  flex-basis: calc(33.33% - 90px); 
   margin-bottom: 20px; 
 }
 
