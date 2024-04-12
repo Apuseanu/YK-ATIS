@@ -7,9 +7,9 @@ body{
 }
 
 .bk {
-  background-color: #b8b8b885;
-  width: 100%;
-  height: 100%;
+    background-color: #b8b8b885;
+    width: 100%;
+    height: 100%;
     padding: 30px 40px;
     position: fixed;
     transform: translate(-50%,-50%);
