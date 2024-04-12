@@ -40,13 +40,12 @@
     font-size: 1.6rem;
   }
   
-  .active,
+  .acctive,
   .accordion:hover {
     background-color: #f1f7f5;
   }
   .pannel {
     padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
     overflow: hidden;
     display: none;
   }
@@ -73,14 +72,17 @@
 
     .pannel p {
       margin-top: 20px;
+      font-size: 0.83rem;
     }
 
     .pannel{
       height: 200px;
     }
 
-    .active,
+    .acctive,
     .accordion:hover {
-      background-color: rgb(34, 37, 49);
+      background-color: rgba(255, 255, 255, 0.205);
     }
+
+    
   }
