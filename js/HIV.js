@@ -19,11 +19,11 @@ function checkAnswers() {
     let message;
 
     if (red > total / 3) {
-      message = "Ești în zona periculoasă de risc!! Imediat consultă un specialist.";
+      alert("Ești în zona periculoasă de risc!! Imediat consultă un specialist.");
     } else if (yellow > total / 3) {
-      message = "Consultă un specialist";
+      alert("Consultă un specialist");
     } else {
-      message = "Bravo!";
+       alert("Bravo!");
     }
 
     document.getElementById("results").classList.add("visible");
