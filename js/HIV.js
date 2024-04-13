@@ -19,9 +19,9 @@ function checkAnswers() {
     let message;
 
     if (red > total / 3) {
-      message = "Fugi";
+      message = "Ești în zona periculoasă de risc!! Imediat consultă un specialist.";
     } else if (yellow > total / 3) {
-      message = "Risc mic";
+      message = "Consultă un specialist";
     } else {
       message = "Bravo!";
     }
