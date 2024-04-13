@@ -65,13 +65,13 @@
 
   @media screen and (max-width:768px) {
     .pannel ul{ 
-      margin-top: -40px;
+      margin-top: -30px;
       font-size: 0.8rem;
       line-height: 1;
     }
 
     .pannel p {
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 0.83rem;
     }
 
