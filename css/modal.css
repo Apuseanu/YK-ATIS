@@ -90,8 +90,8 @@ body {
 
       @media only screen and (max-width: 600px) {
         .modal-content {
-          width: 100%;
-          margin: 0;
+          width: 95%;
+          margin: 10px auto;
           box-shadow: none;
           border: none;
           border-radius: 0;
@@ -99,23 +99,38 @@ body {
       
         .modal-header,
         .modal-footer {
-          padding: 8px;
+          padding: 10px;
         }
       
         .close {
-          font-size: 20px;
+          font-size: 24px;
+        }
+      
+        .question {
+          margin-bottom: 5px;
+        }
+      
+        .options label {
+          font-size: 16px;
+        }
+      
+        .results {
+          margin-top: 10px;
         }
       
         #myBtn {
-          padding: 8px;
+          padding: 10px;
           width: 100%;
           border-radius: 8px;
+          font-size: 18px;
         }
       
         #myBtn:hover {
           background: #654389;
           border-radius: 8px;
+          color: #fefefe;
         }
       }
+      
       
 
