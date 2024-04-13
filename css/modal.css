@@ -108,10 +108,11 @@ body {
       
         .question {
           margin-bottom: 5px;
+          font-size: 13px;
         }
       
         .options label {
-          font-size: 16px;
+          font-size: 14px;
         }
       
         .results {
