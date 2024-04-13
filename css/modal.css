@@ -88,3 +88,34 @@ body {
         color: #fefefe;
       }
 
+      @media only screen and (max-width: 600px) {
+        .modal-content {
+          width: 100%;
+          margin: 0;
+          box-shadow: none;
+          border: none;
+          border-radius: 0;
+        }
+      
+        .modal-header,
+        .modal-footer {
+          padding: 8px;
+        }
+      
+        .close {
+          font-size: 20px;
+        }
+      
+        #myBtn {
+          padding: 8px;
+          width: 100%;
+          border-radius: 8px;
+        }
+      
+        #myBtn:hover {
+          background: #654389;
+          border-radius: 8px;
+        }
+      }
+      
+
